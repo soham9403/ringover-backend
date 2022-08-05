@@ -1,0 +1,14 @@
+import express from 'express'
+import signInApiScehma from '../apischemas/signInApiSchema.js'
+import signUpApiScehma from '../apischemas/SignUpApiScehma.js'
+import resetTokenController from '../controllers/auth/jwt/resetTokenController.js'
+import SignInController from '../controllers/auth/signin/SignInController.js'
+import SignUpController from '../controllers/auth/signup/SignUpController.js'
+import JOImiddleware from '../middlewear/JOImiddleware.js'
+
+const authRouter = express.Router()
+authRouter.post('/reset-token', resetTokenController)
+authRouter.post('/sign-up', JOImiddleware(signUpApiScehma), SignUpController)
+authRouter.post('/sign-in', JOImiddleware(signInApiScehma), SignInController)
+
+export default authRouter
