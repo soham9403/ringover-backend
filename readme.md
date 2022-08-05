@@ -20,7 +20,7 @@ Node with Express
 React JS For Front-end 
 MYSQL database (mysql2 library)
 JWT authentication services
-
+JOI validation at backend
 ```
 
 ## LOGIN IDS
