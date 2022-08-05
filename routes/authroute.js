@@ -2,8 +2,8 @@ import express from 'express'
 import signInApiScehma from '../apischemas/signInApiSchema.js'
 import signUpApiScehma from '../apischemas/signUpApiScehma.js'
 import resetTokenController from '../controllers/auth/jwt/resetTokenController.js'
-import SignInController from '../controllers/auth/signin/signInController.js'
-import SignUpController from '../controllers/auth/signup/signUpController.js'
+import SignInController from '../controllers/auth/signin/SignInController.js'
+import SignUpController from '../controllers/auth/signup/SignUpController.js'
 import JOImiddleware from '../middlewear/JOImiddleware.js'
 
 const authRouter = express.Router()
