@@ -4,15 +4,15 @@ export const user_role = {
   ADMIN_USER: 0
 }
 export const tables = {
-  user:"USER",
-  color:"COLORS",
-  category:"CATEGORY",
-  product:"PRODUCT",
-  custumization:"CUSTOMIZES",
-  ratings:"RATINGS",
-  cart:"CART",
-  cart_product:"CART_PRODUCT",
-  order:"ORDERS"
+  user:"user",
+  color:"colors",
+  category:"category",
+  product:"product",
+  custumization:"customizes",
+  ratings:"ratings",
+  cart:"cart",
+  cart_product:"cart_product",
+  order:"orders"
 }
 export const cart_status = {
   IN_CART:'in_cart',
